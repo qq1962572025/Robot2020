@@ -1,0 +1,8 @@
+<launch>
+  <node pkg="contest" type="contest_node" name="robot410" clear_params="true" output="screen">
+
+    <!-- Mynt camera parameter -->
+    <param name="Mynt_parameter_path" value="/config/Mynt.yaml" />
+
+  </node>
+</launch>
