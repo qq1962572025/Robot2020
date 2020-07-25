@@ -1,6 +1,0 @@
-contest
-/home/slam/Robot2020/devel/.private/contest/cmake.lock /home/slam/Robot2020/devel/./cmake.lock
-/home/slam/Robot2020/devel/.private/contest/lib/pkgconfig/contest.pc /home/slam/Robot2020/devel/lib/pkgconfig/contest.pc
-/home/slam/Robot2020/devel/.private/contest/lib/contest/contest_node /home/slam/Robot2020/devel/lib/contest/contest_node
-/home/slam/Robot2020/devel/.private/contest/share/contest/cmake/contestConfig-version.cmake /home/slam/Robot2020/devel/share/contest/cmake/contestConfig-version.cmake
-/home/slam/Robot2020/devel/.private/contest/share/contest/cmake/contestConfig.cmake /home/slam/Robot2020/devel/share/contest/cmake/contestConfig.cmake
