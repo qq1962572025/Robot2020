@@ -6,4 +6,3 @@ frames.pdf
 .catkin_workspace
 src/CMakeLists.txt
 src/contest/CMakeLists.txt.user
-.gitignore
