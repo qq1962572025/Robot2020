@@ -13,6 +13,7 @@
         <file>icon/2.png</file>
         <file>icon/3.png</file>
         <file>image/map.jpg</file>
+        <file>icon/robot_207.78378378378px_1161814_easyicon.net.png</file>
     </qresource>
     <qresource prefix="/icon"/>
 </RCC>

@@ -4,7 +4,7 @@ project(contest)
 
 ## Compile as C++11, supported in ROS Kinetic and newer
 add_compile_options(-std=c++11)
-set (CMAKE_PREFIX_PATH "/opt/ros/kinetic")
+set (CMAKE_PREFIX_PATH "/opt/ros/melodic")
 
 #打开全局moc
 set(CMAKE_AUTOMOC ON)
@@ -12,6 +12,8 @@ set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTOUIC ON)
 #打开全局rcc，本示例中没有使用qrc，此句可以去掉
 set(CMAKE_AUTORCC ON)
+
+#target_link_libraries(my_awesome_library ${OpenCV_LIBRARIES})
 
 find_package(Qt5 REQUIRED Widgets)
 
@@ -176,6 +178,8 @@ target_link_libraries(${PROJECT_NAME}_node
    ${catkin_LIBRARIES}
    ${OpenCV_LIBRARIES}
 )
+
+
 
 #############
 ## Install ##

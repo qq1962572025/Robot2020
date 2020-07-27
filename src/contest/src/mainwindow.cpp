@@ -1,6 +1,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-
+#include <QMouseEvent>
+ #include<string>
 using namespace std;
 using namespace cv;
 
@@ -8,10 +9,19 @@ MainWindow::MainWindow(QWidget *parent) :
   QMainWindow(parent),
   ui(new Ui::MainWindow)
 {
-  this->setWindowIcon(QIcon(":/task_image/icon/1.png"));
+  this->setWindowIcon(QIcon(":/task_image/icon/robot_207.78378378378px_1161814_easyicon.net.png"));
   this->setFixedSize(1600,900);
   ui->setupUi(this);
   ui->stackedWidget->setCurrentIndex(int(0));
+  // connect to a same slot****************************
+  connect(ui->button_back_1, SIGNAL(clicked()), this, SLOT(BACK()));
+  connect(ui->button_back_2, SIGNAL(clicked()), this, SLOT(BACK()));
+  connect(ui->button_back_3, SIGNAL(clicked()), this, SLOT(BACK()));
+  connect(ui->button_back_4, SIGNAL(clicked()), this, SLOT(BACK()));
+  connect(ui->button_back_5, SIGNAL(clicked()), this, SLOT(BACK()));
+  connect(ui->button_back_6, SIGNAL(clicked()), this, SLOT(BACK()));
+
+
   ui->push_button_task1->setStyleSheet(
         "QPushButton{"
         "border-radius: 15px; "
@@ -134,7 +144,7 @@ MainWindow::MainWindow(QWidget *parent) :
         "color: rgb(240,240,240);"
         "border-image:url(:/task_image/image/6.png);}"
         );
-  ui->button_exit1->setStyleSheet(
+  ui->button_back_1->setStyleSheet(
         "QPushButton{"
         "border-radius:15px; "
         "border-style:outset;"
@@ -149,7 +159,157 @@ MainWindow::MainWindow(QWidget *parent) :
         "border-color:rgb(80,80,80);"
         "background-image:url(:/task_image/icon/1.png);}"
         );
-  ui->button_attr_1->setStyleSheet(
+  ui->button_exit_1->setStyleSheet(
+        "QPushButton{"
+        "border-radius:15px; "
+        "border-style:outset;"
+        "border-width:1px;"
+        "border-color:rgb(120,120,120);"
+        "background-image:url(:/task_image/icon/3.png);}"
+
+        "QPushButton:hover{"
+        "border-radius: 12px; "
+        "border-style:outset;"
+        "border-width:1px;"
+        "border-color:rgb(80,80,80);"
+        "background-image:url(:/task_image/icon/3.png);}"
+        );
+  ui->button_back_2->setStyleSheet(
+        "QPushButton{"
+        "border-radius:15px; "
+        "border-style:outset;"
+        "border-width:1px;"
+        "border-color:rgb(120,120,120);"
+        "background-image:url(:/task_image/icon/1.png);}"
+
+        "QPushButton:hover{"
+        "border-radius: 12px; "
+        "border-style:outset;"
+        "border-width:1px;"
+        "border-color:rgb(80,80,80);"
+        "background-image:url(:/task_image/icon/1.png);}"
+        );
+  ui->button_exit_2->setStyleSheet(
+        "QPushButton{"
+        "border-radius:15px; "
+        "border-style:outset;"
+        "border-width:1px;"
+        "border-color:rgb(120,120,120);"
+        "background-image:url(:/task_image/icon/3.png);}"
+
+        "QPushButton:hover{"
+        "border-radius: 12px; "
+        "border-style:outset;"
+        "border-width:1px;"
+        "border-color:rgb(80,80,80);"
+        "background-image:url(:/task_image/icon/3.png);}"
+        );
+  ui->button_back_3->setStyleSheet(
+        "QPushButton{"
+        "border-radius:15px; "
+        "border-style:outset;"
+        "border-width:1px;"
+        "border-color:rgb(120,120,120);"
+        "background-image:url(:/task_image/icon/1.png);}"
+
+        "QPushButton:hover{"
+        "border-radius: 12px; "
+        "border-style:outset;"
+        "border-width:1px;"
+        "border-color:rgb(80,80,80);"
+        "background-image:url(:/task_image/icon/1.png);}"
+        );
+  ui->button_exit_3->setStyleSheet(
+        "QPushButton{"
+        "border-radius:15px; "
+        "border-style:outset;"
+        "border-width:1px;"
+        "border-color:rgb(120,120,120);"
+        "background-image:url(:/task_image/icon/3.png);}"
+
+        "QPushButton:hover{"
+        "border-radius: 12px; "
+        "border-style:outset;"
+        "border-width:1px;"
+        "border-color:rgb(80,80,80);"
+        "background-image:url(:/task_image/icon/3.png);}"
+        );
+  ui->button_back_4->setStyleSheet(
+        "QPushButton{"
+        "border-radius:15px; "
+        "border-style:outset;"
+        "border-width:1px;"
+        "border-color:rgb(120,120,120);"
+        "background-image:url(:/task_image/icon/1.png);}"
+
+        "QPushButton:hover{"
+        "border-radius: 12px; "
+        "border-style:outset;"
+        "border-width:1px;"
+        "border-color:rgb(80,80,80);"
+        "background-image:url(:/task_image/icon/1.png);}"
+        );
+  ui->button_exit_4->setStyleSheet(
+        "QPushButton{"
+        "border-radius:15px; "
+        "border-style:outset;"
+        "border-width:1px;"
+        "border-color:rgb(120,120,120);"
+        "background-image:url(:/task_image/icon/3.png);}"
+
+        "QPushButton:hover{"
+        "border-radius: 12px; "
+        "border-style:outset;"
+        "border-width:1px;"
+        "border-color:rgb(80,80,80);"
+        "background-image:url(:/task_image/icon/3.png);}"
+        );
+  ui->button_back_5->setStyleSheet(
+        "QPushButton{"
+        "border-radius:15px; "
+        "border-style:outset;"
+        "border-width:1px;"
+        "border-color:rgb(120,120,120);"
+        "background-image:url(:/task_image/icon/1.png);}"
+
+        "QPushButton:hover{"
+        "border-radius: 12px; "
+        "border-style:outset;"
+        "border-width:1px;"
+        "border-color:rgb(80,80,80);"
+        "background-image:url(:/task_image/icon/1.png);}"
+        );
+  ui->button_exit_5->setStyleSheet(
+        "QPushButton{"
+        "border-radius:15px; "
+        "border-style:outset;"
+        "border-width:1px;"
+        "border-color:rgb(120,120,120);"
+        "background-image:url(:/task_image/icon/3.png);}"
+
+        "QPushButton:hover{"
+        "border-radius: 12px; "
+        "border-style:outset;"
+        "border-width:1px;"
+        "border-color:rgb(80,80,80);"
+        "background-image:url(:/task_image/icon/3.png);}"
+        );
+  ui->button_back_6->setStyleSheet(
+        "QPushButton{"
+        "border-radius:15px; "
+        "border-style:outset;"
+        "border-width:1px;"
+        "border-color:rgb(120,120,120);"
+        "background-image:url(:/task_image/icon/1.png);}"
+
+        "QPushButton:hover{"
+        "border-radius: 12px; "
+        "border-style:outset;"
+        "border-width:1px;"
+        "border-color:rgb(80,80,80);"
+        "background-image:url(:/task_image/icon/1.png);}"
+        );
+  ui->button_exit_6->setStyleSheet(
         "QPushButton{"
         "border-radius:15px; "
         "border-style:outset;"
@@ -170,65 +330,47 @@ MainWindow::MainWindow(QWidget *parent) :
 
 }
 
-void MainWindow::Set_ROS_node(ros::NodeHandle &_nh){
-  nh=_nh;
-}
-
 MainWindow::~MainWindow(){
-
+// ui->stackedWidget->setCurrentIndex(int(5));
   delete ui;
 }
 
-Mat MainWindow::rescale_mat(Mat &src){
-  Mat dst;
-  cvtColor(src, dst, COLOR_RGB2GRAY);
-  GaussianBlur(dst, dst, Size(3, 3), 0);
-  threshold(dst, dst, 165, 255, THRESH_BINARY);
-  medianBlur(dst, dst, 3);
-  erode(dst, dst, Mat(9, 9, CV_8U));
-  int left=dst.size[0]-1;
-  int right=0;
-  int top=dst.size[1]-1;
-  int bottom=0;
+//###########################################################################################
+//###########################################################################################
+//################################### GUI FUNCTION ##########################################
 
-  for(int i=0;i<dst.size[0];i++){
-    for(int j=0;j<dst.size[1];j++){
-      if((int)dst.at<uchar>(i,j)>0){
-        if(i>right) right = i;
-        if(i<left)left = i;
-        if(j>bottom) bottom = j;
-        if(j<top)top = j;
 
-      }
-    }
-  }
-  int h = bottom-top;
-  int w = right-left;
-  int centerx = left + int(w/2);
-  int centery = top + int(h/2);
-  int l = max(h,w);
-  Mat dd(src,Rect(max(centerx-(l/2)-40,0),max(centery-(l/2)-40,0),l+80,l+80));
-  return dd;
+void MainWindow::BACK(){
+  ui->stackedWidget->setCurrentIndex(int(0));
 }
+
 
 void MainWindow::on_push_button_task1_clicked()
 {
 
-  ui->stackedWidget->setCurrentIndex(int(3));
+  ui->stackedWidget->setCurrentIndex(int(1));
+  ui->label_title_1->setText(QString("场景一：多功能天桥"));
+  ui->label_title_1->setStyleSheet("font: 22pt 'Umpush';");
+
+  task_type=1;
 
 }
 void MainWindow::on_push_button_task2_clicked()
 {
   ui->stackedWidget->setCurrentIndex(int(2));
+  ui->label_title_2->setText(QString("场景二：模拟医院场景"));
+  ui->label_title_2->setStyleSheet("font: 22pt 'Umpush';");
+
+  task_type=2;
 }
 
 void MainWindow::on_push_button_task3_clicked()
 {
 
-  ui->stackedWidget->setCurrentIndex(int(1));
+  ui->stackedWidget->setCurrentIndex(int(3));
 
-  ui->label_title_1->setText(QString("场景三：黑暗环境"));
-  ui->label_title_1->setStyleSheet("font: 22pt 'Umpush';");
+  ui->label_title_3->setText(QString("场景三：暗黑避障屋"));
+  ui->label_title_3->setStyleSheet("font: 22pt 'Umpush';");
 
   task_type=3;
 }
@@ -236,49 +378,64 @@ void MainWindow::on_push_button_task3_clicked()
 void MainWindow::on_push_button_task4_clicked()
 {
   ui->stackedWidget->setCurrentIndex(int(4));
+  ui->label_title_4->setText(QString("场景四：建筑废墟"));
+  ui->label_title_4->setStyleSheet("font: 22pt 'Umpush';");
+
+  task_type=4;
 }
 
 void MainWindow::on_push_button_task5_clicked()
 {
   ui->stackedWidget->setCurrentIndex(int(5));
+  ui->label_title_5->setText(QString("场景五：烟雾环境"));
+  ui->label_title_5->setStyleSheet("font: 22pt 'Umpush';");
+
+  task_type=5;
 }
 
 void MainWindow::on_push_button_task6_clicked()
 {
   ui->stackedWidget->setCurrentIndex(int(6));
+  ui->label_title_6->setText(QString("场景六：狭小通道"));
+  ui->label_title_6->setStyleSheet("font: 22pt 'Umpush';");
+  task_type=6;
 }
 
-void MainWindow::on_button_exit_clicked()
+void MainWindow::on_button_start_3_clicked()
 {
-  this->close();
+    Start_navigation = !Start_navigation;
+    if(Start_navigation){
+        ui->button_start_3->setText(QString("结束导航"));
+    }
+    else{
+        ui->button_start_3->setText(QString("开始导航"));
+    }
 }
-void MainWindow::on_button_exit1_clicked()
+void MainWindow::mouseMoveEvent(QMouseEvent *e)
 {
-  ui->stackedWidget->setCurrentIndex(int(0));
+    QPoint pp = e->globalPos();
+    pp = ui->label_map_3->mapFromGlobal(pp);
+
+    QSize label_size = ui->label_map_3->size();
+    int h = label_size.height(),w = label_size.width();
+    int x = pp.x() - int(w/2);
+    int y = pp.y() - int(h/2);
+    float dis = sqrt( pow(x,2)+ pow(y,2));
+    QString mesg = QString('('+QString::number(x)+','+QString::number(y)+"), "+QString("%1").arg(dis));
+    statusBar()->showMessage(mesg, 5000);
 }
-void MainWindow::on_pushButton_exit2_clicked()
-{
-  ui->stackedWidget->setCurrentIndex(int(0));
+
+//###########################################################################################
+//###########################################################################################
+//################################ ROS FUNCTION  ############################################
+
+
+Mat MainWindow::rescale_mat(Mat &src){
+  Mat dd(src,Rect(102,102,180,180));
+  return dd;
 }
-void MainWindow::on_pushButton_exit3_clicked()
-{
-  ui->stackedWidget->setCurrentIndex(int(0));
-}
-void MainWindow::on_pushButton_exit4_clicked()
-{
-  ui->stackedWidget->setCurrentIndex(int(0));
-}
-void MainWindow::on_pushButton_exit5_clicked()
-{
-  ui->stackedWidget->setCurrentIndex(int(0));
-}
-void MainWindow::on_pushButton_exit6_clicked()
-{
-  ui->stackedWidget->setCurrentIndex(int(0));
-}
-void MainWindow::on_button_attr_1_clicked()
-{
-  this->close();
+void MainWindow::Set_ROS_node(ros::NodeHandle &_nh){
+  nh=_nh;
 }
 
 void MainWindow::MYNT_image_input(const sensor_msgs::ImageConstPtr &image_input){
@@ -366,58 +523,60 @@ void MainWindow::Task_update(){
 
   tf::TransformListener listener;
 
-  ros::Rate rate(5);
-
+  ros::Rate rate(10);
   while(ros::ok())
   {
-    ros::spinOnce();
+      while(Start_navigation){
+          ros::spinOnce();
+          if (task_type==3){
+            MYNT_Image_Mutex.lock();
+            if (image_MYNT.data){
+              QImage Image_MYNT=QImage((const uchar*)(image_MYNT.data), image_MYNT.cols, image_MYNT.rows, image_MYNT.step, QImage::Format_RGB888);
+              ui->label_rgb_image->setPixmap(QPixmap::fromImage(Image_MYNT));
+              ui->label_rgb_image->setScaledContents(true);
+            }
+            MYNT_Image_Mutex.unlock();
 
-    if (task_type==3){
-      MYNT_Image_Mutex.lock();
-      if (image_MYNT.data){
-        QImage Image_MYNT=QImage((const uchar*)(image_MYNT.data), image_MYNT.cols, image_MYNT.rows, image_MYNT.step, QImage::Format_RGB888);
-        ui->label_rgb_image->setPixmap(QPixmap::fromImage(Image_MYNT));
-        ui->label_rgb_image->setScaledContents(true);
+            MYNT_Depth_Mutex.lock();
+            if (depth_MYNT.data){
+              QImage Depth_MYNT=QImage((const uchar*)(depth_MYNT.data), depth_MYNT.cols, depth_MYNT.rows, depth_MYNT.step, QImage::Format_Grayscale8);
+              ui->label_hot_image->setPixmap(QPixmap::fromImage(Depth_MYNT));
+              ui->label_hot_image->setScaledContents(true);
+            }
+            MYNT_Depth_Mutex.unlock();
+
+            Map_Mutex.lock();
+            if (map_task.data){
+              Mat map=map_task;
+              tf::StampedTransform transform;
+              try{
+                listener.lookupTransform("/map", "/base_link",ros::Time(0), transform);
+              }
+              catch (tf::TransformException &ex) {
+                printf("%s\n",ex.what());
+                ros::Duration(1.0).sleep();
+                Map_Mutex.unlock();
+                continue;
+              }
+              int xx=transform.getOrigin().x()/Map_resolution,
+                  yy=transform.getOrigin().y()/Map_resolution;
+
+               circle(map,Point(map.cols/2+xx,map.rows/2+yy),3,Scalar(255,0,0),-1);
+
+               Mat rescaled_mat = rescale_mat(map);
+               QImage Img = QImage((const uchar*)(rescaled_mat.data), rescaled_mat.cols, rescaled_mat.rows, rescaled_mat.step, QImage::Format_RGB888);
+               ui->label_map_3->setPixmap(QPixmap::fromImage(Img));
+               ui->label_map_3->setScaledContents(true);
+
+            }
+            Map_Mutex.unlock();
+
+          }
+
+          rate.sleep();
       }
-      MYNT_Image_Mutex.unlock();
-
-      MYNT_Depth_Mutex.lock();
-      if (depth_MYNT.data){
-        QImage Depth_MYNT=QImage((const uchar*)(depth_MYNT.data), depth_MYNT.cols, depth_MYNT.rows, depth_MYNT.step, QImage::Format_Grayscale8);
-        ui->label_hot_image->setPixmap(QPixmap::fromImage(Depth_MYNT));
-        ui->label_hot_image->setScaledContents(true);
-      }
-      MYNT_Depth_Mutex.unlock();
-
-      Map_Mutex.lock();
-      if (map_task.data){
-        Mat map=map_task;
-        tf::StampedTransform transform;
-        try{
-          listener.lookupTransform("/map", "/base_link",ros::Time(0), transform);
-        }
-        catch (tf::TransformException &ex) {
-          printf("%s\n",ex.what());
-          ros::Duration(1.0).sleep();
-          Map_Mutex.unlock();
-          continue;
-        }
-        int xx=transform.getOrigin().x()/Map_resolution,
-            yy=transform.getOrigin().y()/Map_resolution;
-
-         circle(map,Point(map.cols/2+xx,map.rows/2+yy),5,Scalar(0,0,255),-1);
-
-         Mat rescaled_mat = rescale_mat(map);
-         QImage Img = QImage((const uchar*)(rescaled_mat.data), rescaled_mat.cols, rescaled_mat.rows, rescaled_mat.step, QImage::Format_RGB888);
-         ui->label_map_1->setPixmap(QPixmap::fromImage(Img));
-         ui->label_map_1->setScaledContents(true);
-
-      }
-      Map_Mutex.unlock();
-
-    }
-
-    rate.sleep();
   }
 
 }
+
+
