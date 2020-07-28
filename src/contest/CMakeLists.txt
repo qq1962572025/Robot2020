@@ -29,9 +29,9 @@ find_package(catkin REQUIRED COMPONENTS
   tf
 )
 
-find_package(OpenCV)
+find_package(OpenCV REQUIRED)
 
-message("OpenCV:" ${OpenCV_DIR})
+message("************************ *******************************************OpenCV:" ${OpenCV_INCLUDE_DIRS})
 
 ## System dependencies are found with CMake's conventions
 # find_package(Boost REQUIRED COMPONENTS system)

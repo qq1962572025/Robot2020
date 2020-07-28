@@ -18,7 +18,7 @@ set(AM_QT_RCC_EXECUTABLE "/usr/lib/qt5/bin/rcc")
 # MOC settings
 set(AM_MOC_SKIP "/home/phy12321/code/robot/src/build-contest-unknown-Default/contest_node_autogen/EWIEGA46WW/qrc_image.cpp;/home/phy12321/code/robot/src/build-contest-unknown-Default/contest_node_autogen/mocs_compilation.cpp")
 set(AM_MOC_DEFINITIONS "QT_CORE_LIB;QT_GUI_LIB;QT_NO_DEBUG;QT_WIDGETS_LIB;ROSCONSOLE_BACKEND_LOG4CXX;ROS_BUILD_SHARED_LIBS=1;ROS_PACKAGE_NAME=\"contest\"")
-set(AM_MOC_INCLUDES "/home/phy12321/code/robot/src/build-contest-unknown-Default/contest_node_autogen/include;/home/phy12321/code/robot/src/contest/include;/opt/ros/melodic/include;/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp;/usr/include/opencv;/usr/include/x86_64-linux-gnu/qt5;/usr/include/x86_64-linux-gnu/qt5/QtWidgets;/usr/include/x86_64-linux-gnu/qt5/QtGui;/usr/include/x86_64-linux-gnu/qt5/QtCore;/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++;/usr/include")
+set(AM_MOC_INCLUDES "/home/phy12321/code/robot/src/build-contest-unknown-Default/contest_node_autogen/include;/home/phy12321/code/robot/src/contest/include;/opt/ros/melodic/include;/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp;/usr/include/opencv;/usr/local/include;/usr/local/include/opencv;/usr/include/x86_64-linux-gnu/qt5;/usr/include/x86_64-linux-gnu/qt5/QtWidgets;/usr/include/x86_64-linux-gnu/qt5/QtGui;/usr/include/x86_64-linux-gnu/qt5/QtCore;/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++;/usr/include")
 set(AM_MOC_OPTIONS "")
 set(AM_MOC_RELAXED_MODE "FALSE")
 set(AM_MOC_MACRO_NAMES "Q_OBJECT;Q_GADGET;Q_NAMESPACE")
