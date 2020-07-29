@@ -4,7 +4,7 @@ project(contest)
 
 ## Compile as C++11, supported in ROS Kinetic and newer
 add_compile_options(-std=c++11)
-set (CMAKE_PREFIX_PATH "/opt/ros/melodic")
+set (CMAKE_PREFIX_PATH "/opt/ros/kinetic")
 
 #打开全局moc
 set(CMAKE_AUTOMOC ON)

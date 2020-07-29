@@ -1,0 +1,65 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"/usr/src/gtest/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 0,
+			"id" : "gtest::@d529727cdc2d81c57acb"
+		}
+	],
+	"id" : "gtest_main_autogen::@d529727cdc2d81c57acb",
+	"isGeneratorProvided" : true,
+	"name" : "gtest_main_autogen",
+	"paths" : 
+	{
+		"build" : "gtest/gtest",
+		"source" : "/usr/src/gtest"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/slam/Robot2020/src/build-contest-Desktop_Qt_5_14_2_GCC_64bit-Debug/gtest/gtest/CMakeFiles/gtest_main_autogen",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/slam/Robot2020/src/build-contest-Desktop_Qt_5_14_2_GCC_64bit-Debug/gtest/gtest/CMakeFiles/gtest_main_autogen.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

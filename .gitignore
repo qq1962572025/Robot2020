@@ -6,3 +6,6 @@ frames.pdf
 .catkin_workspace
 src/CMakeLists.txt
 src/contest/CMakeLists.txt.user
+Robot2020.workspace
+src/build-contest-unknown-Default
+src/wei_bag.bag

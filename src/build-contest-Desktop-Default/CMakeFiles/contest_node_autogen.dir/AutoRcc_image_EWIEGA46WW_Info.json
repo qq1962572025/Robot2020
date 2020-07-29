@@ -1,0 +1,35 @@
+{
+	"BUILD_DIR" : "/home/slam/Robot2020/src/build-contest-Desktop-Default/contest_node_autogen",
+	"CMAKE_BINARY_DIR" : "/home/slam/Robot2020/src/build-contest-Desktop-Default",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/slam/Robot2020/src/build-contest-Desktop-Default",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/slam/Robot2020/src/contest",
+	"CMAKE_SOURCE_DIR" : "/home/slam/Robot2020/src/contest",
+	"INCLUDE_DIR" : "/home/slam/Robot2020/src/build-contest-Desktop-Default/contest_node_autogen/include",
+	"INPUTS" : 
+	[
+		"/home/slam/Robot2020/src/contest/icon/2.png",
+		"/home/slam/Robot2020/src/contest/icon/robot_207.78378378378px_1161814_easyicon.net.png",
+		"/home/slam/Robot2020/src/contest/icon/power_exit_120px_1122609_easyicon.net.ico",
+		"/home/slam/Robot2020/src/contest/icon/iconfinder_left-arrow-back_2931162.png",
+		"/home/slam/Robot2020/src/contest/icon/1.png",
+		"/home/slam/Robot2020/src/contest/icon/iconfinder_menu-lines-list_2931181.png",
+		"/home/slam/Robot2020/src/contest/icon/3.png",
+		"/home/slam/Robot2020/src/contest/image/2.png",
+		"/home/slam/Robot2020/src/contest/image/6.png",
+		"/home/slam/Robot2020/src/contest/image/map.jpg",
+		"/home/slam/Robot2020/src/contest/image/1.png",
+		"/home/slam/Robot2020/src/contest/image/5.png",
+		"/home/slam/Robot2020/src/contest/image/4.png",
+		"/home/slam/Robot2020/src/contest/image/3.png"
+	],
+	"LOCK_FILE" : "/home/slam/Robot2020/src/build-contest-Desktop-Default/CMakeFiles/contest_node_autogen.dir/AutoRcc_image_EWIEGA46WW_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "-name", "image" ],
+	"OUTPUT_CHECKSUM" : "EWIEGA46WW",
+	"OUTPUT_NAME" : "qrc_image.cpp",
+	"RCC_EXECUTABLE" : "/usr/lib/x86_64-linux-gnu/qt5/bin/rcc",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "/home/slam/Robot2020/src/build-contest-Desktop-Default/CMakeFiles/contest_node_autogen.dir/AutoRcc_image_EWIEGA46WW_Used.txt",
+	"SOURCE" : "/home/slam/Robot2020/src/contest/image.qrc",
+	"VERBOSITY" : 0
+}
