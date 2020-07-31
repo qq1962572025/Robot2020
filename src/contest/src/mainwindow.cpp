@@ -420,7 +420,7 @@ void MainWindow::mouseMoveEvent(QMouseEvent *e)
     int h = label_size.height(),w = label_size.width();
     int x = pp.x() - int(w/2);
     int y = pp.y() - int(h/2);
-    float dis = sqrt( pow(x,2)+ pow(y,2));
+    double dis = sqrt( pow(x,2)+ pow(y,2));
     QString mesg = QString('('+QString::number(x)+','+QString::number(y)+"), "+QString("%1").arg(dis));
     statusBar()->showMessage(mesg, 5000);
 }

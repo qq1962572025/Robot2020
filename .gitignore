@@ -11,3 +11,4 @@ src/build-contest-unknown-Default/
 src/build-contest-Desktop-Default/
 src/build-contest-Desktop_Qt_5_14_2_GCC_64bit-Debug/
 src/wei_bag.bag
+src/contest/CMakeLists.txt.user.410-pre1
